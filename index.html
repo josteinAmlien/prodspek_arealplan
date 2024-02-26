@@ -532,7 +532,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#kpkpendringområde">5.1.4.4. «FeatureType» KpEndringOmråde</a></li>
 <li><a href="#kpkpgrense">5.1.4.5. «FeatureType» KpGrense</a></li>
 <li><a href="#kpvertikallag">5.1.4.6. «dataType» Vertikallag</a></li>
-<li><a href="#kpvertikalnivå">5.1.4.7. «Enumeration»Vertikalnivå</a></li>
+<li><a href="#kpvertikalnivå">5.1.4.7. «CodeList» Vertikalnivå</a></li>
 </ul>
 </li>
 <li><a href="#_pakke_formål">5.1.5. Pakke: Formål</a>
@@ -544,6 +544,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#kputnytting">5.1.5.5. «dataType» Utnytting</a></li>
 <li><a href="#kputnyttingstype">5.1.5.6. «CodeList» Utnyttingstype</a></li>
 <li><a href="#kpkparealgrense">5.1.5.7. «FeatureType» KpArealGrense</a></li>
+<li><a href="#kpkphandlingområde">5.1.5.8. «FeatureType» KpHandlingOmråde</a></li>
+<li><a href="#kpkphandlingrom">5.1.5.9. «FeatureType» KpHandlingRom</a></li>
 </ul>
 </li>
 <li><a href="#_pakke_hensyn">5.1.6. Pakke: Hensyn</a>
@@ -579,21 +581,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#kpkpregulerthøyde">5.1.8.1. «FeatureType» KpRegulertHøyde</a></li>
 <li><a href="#kphøydefraplanbestemmelse">5.1.8.2. «dataType» HøydeFraPlanbestemmelse</a></li>
-<li><a href="#_codelist_høydereferansesystem">5.1.8.3. «CodeList» Høydereferansesystem</a></li>
-<li><a href="#kptypehøyde">5.1.8.4. «Enumeration»TypeHøyde</a></li>
-<li><a href="#kpterrengreferanse">5.1.8.5. «Enumeration»Terrengreferanse</a></li>
+<li><a href="#kphøydereferansesystem">5.1.8.3. «CodeList» Høydereferansesystem</a></li>
+<li><a href="#kptypehøyde">5.1.8.4. «CodeList» TypeHøyde</a></li>
+<li><a href="#kpterrengreferanse">5.1.8.5. «CodeList» Terrengreferanse</a></li>
 </ul>
 </li>
 <li><a href="#_pakke_linjer_og_punkt">5.1.9. Pakke: Linjer og Punkt</a>
 <ul class="sectlevel4">
 <li><a href="#kpkpsamferdselpunkt">5.1.9.1. «FeatureType» KpSamferdselPunkt</a></li>
-<li><a href="#kpkpsamferdsellinje">5.1.9.2. «FeatureType» KpSamferdselLinje</a></li>
-<li><a href="#kpkpinfrastrukturlinje">5.1.9.3. «FeatureType» KpInfrastrukturLinje</a></li>
-<li><a href="#kpkpjuridisklinje">5.1.9.4. «FeatureType» KpJuridiskLinje</a></li>
-<li><a href="#kpinfrastrukturlinjetype">5.1.9.5. «CodeList» InfrastrukturLinjeType</a></li>
-<li><a href="#kpkpjuridisklinjetype">5.1.9.6. «CodeList» KpJuridiskLinjeType</a></li>
-<li><a href="#kpsamferdselspunkttype">5.1.9.7. «CodeList» SamferdselspunktType</a></li>
-<li><a href="#kpsamferdselslinjetype">5.1.9.8. «CodeList» SamferdselslinjeType</a></li>
+<li><a href="#kpsamferdselspunkttype">5.1.9.2. «CodeList» SamferdselspunktType</a></li>
+<li><a href="#kpkpsamferdsellinje">5.1.9.3. «FeatureType» KpSamferdselLinje</a></li>
+<li><a href="#kpsamferdselslinjetype">5.1.9.4. «CodeList» SamferdselslinjeType</a></li>
+<li><a href="#kpkpinfrastrukturlinje">5.1.9.5. «FeatureType» KpInfrastrukturLinje</a></li>
+<li><a href="#kpinfrastrukturlinjetype">5.1.9.6. «CodeList» InfrastrukturLinjeType</a></li>
+<li><a href="#kpkpjuridisklinje">5.1.9.7. «FeatureType» KpJuridiskLinje</a></li>
+<li><a href="#kpkpjuridisklinjetype">5.1.9.8. «CodeList» KpJuridiskLinjeType</a></li>
 <li><a href="#kpviktighet">5.1.9.9. «CodeList» Viktighet</a></li>
 <li><a href="#kpholdningsklassetype">5.1.9.10. «CodeList» HoldningsklasseType</a></li>
 </ul>
@@ -609,10 +611,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#kpkparealbrukområde">5.1.11.1. «FeatureType» KpArealbrukOmråde</a></li>
 <li><a href="#kparealbruk">5.1.11.2. «CodeList» Arealbruk</a></li>
-<li><a href="#kparealbruksrestriksjoner">5.1.11.3. «CodeList» Arealbruksrestriksjoner</a></li>
-<li><a href="#kparealbruksretningslinjer">5.1.11.4. «CodeList» Arealbruksretningslinjer</a></li>
-<li><a href="#kpkprestriksjonområde">5.1.11.5. «FeatureType» KpRestriksjonOmråde</a></li>
-<li><a href="#kpkpretningslinjeområde">5.1.11.6. «FeatureType» KpRetningslinjeOmråde</a></li>
+<li><a href="#kpkprestriksjonområde">5.1.11.3. «FeatureType» KpRestriksjonOmråde</a></li>
+<li><a href="#kparealbruksrestriksjoner">5.1.11.4. «CodeList» Arealbruksrestriksjoner</a></li>
+<li><a href="#kpkpretningslinjeområde">5.1.11.5. «FeatureType» KpRetningslinjeOmråde</a></li>
+<li><a href="#kparealbruksretningslinjer">5.1.11.6. «CodeList» Arealbruksretningslinjer</a></li>
 </ul>
 </li>
 </ul>
@@ -1274,21 +1276,21 @@ SOSI Generell objektkatalog::Plan::<span class="underline">«ApplicationSchema»
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Pakkediagram Kommuneplan.png"><img src="Diagrammer/Pakkediagram%20Kommuneplan.png" alt="Diagram med navn  Pakkediagram Kommuneplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Pakkediagram Kommuneplan.png"><img src="diagrammer/Pakkediagram%20Kommuneplan.png" alt="Diagram med navn  Pakkediagram Kommuneplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 1. Pakkediagram Kommuneplan</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Pakkerealisering Kommuneplan.png"><img src="Diagrammer/Pakkerealisering%20Kommuneplan.png" alt="Diagram med navn  Pakkerealisering Kommuneplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Pakkerealisering Kommuneplan.png"><img src="diagrammer/Pakkerealisering%20Kommuneplan.png" alt="Diagram med navn  Pakkerealisering Kommuneplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 2. Pakkerealisering Kommuneplan</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Oversiktsdiagram Kommuneplan.png"><img src="Diagrammer/Oversiktsdiagram%20Kommuneplan.png" alt="Diagram med navn  Oversiktsdiagram Kommuneplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Oversiktsdiagram Kommuneplan.png"><img src="diagrammer/Oversiktsdiagram%20Kommuneplan.png" alt="Diagram med navn  Oversiktsdiagram Kommuneplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 3. Oversiktsdiagram Kommuneplan</div>
 </div>
@@ -1301,21 +1303,21 @@ SOSI Generell objektkatalog::Plan::<span class="underline">«ApplicationSchema»
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram Fellesegenskaper.png"><img src="Diagrammer/Hoveddiagram%20Fellesegenskaper.png" alt="Diagram som viser Fellesegenskaper"></a>
+<a class="image" href="diagrammer\Hoveddiagram Fellesegenskaper.png"><img src="diagrammer/Hoveddiagram%20Fellesegenskaper.png" alt="Diagram som viser Fellesegenskaper"></a>
 </div>
 <div class="title">Figur 4. Hoveddiagram Fellesegenskaper</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering Fellesegenskaper.png"><img src="Diagrammer/Realisering%20Fellesegenskaper.png" alt="Diagram som viser hvordan Fellesegenskaper er realisert fra SOSI Generelle Typer 5.1"></a>
+<a class="image" href="diagrammer\Realisering Fellesegenskaper.png"><img src="diagrammer/Realisering%20Fellesegenskaper.png" alt="Diagram som viser hvordan Fellesegenskaper er realisert fra SOSI Generelle Typer 5.1"></a>
 </div>
 <div class="title">Figur 5. Realisering Fellesegenskaper</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring Fellesegenskaper.png"><img src="Diagrammer/Endring%20Fellesegenskaper.png" alt="Diagram som illustrerer endringer siden forrige versjon av spesifikasjonen"></a>
+<a class="image" href="diagrammer\Endring Fellesegenskaper.png"><img src="diagrammer/Endring%20Fellesegenskaper.png" alt="Diagram som illustrerer endringer siden forrige versjon av spesifikasjonen"></a>
 </div>
 <div class="title">Figur 6. Endring Fellesegenskaper</div>
 </div>
@@ -1606,7 +1608,8 @@ I SOSI Del 1 er SOSI_Objekt en abstrakt objekttype som bærer sentrale egenskape
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Subtyper:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkpobjekt">«FeatureType» KpObjekt</a><br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkpobjekt">«FeatureType» KpObjekt</a><br>
+<a href="#kpplanområde">«FeatureType» Planområde</a><br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
@@ -1745,8 +1748,10 @@ For plan anbefales navnerommet <a href="http://data.geonorge.no/sosi/plan" class
 <p><strong>Definisjon:</strong> beskrivelse av kvaliteten på stedfestingen.</p>
 </div>
 <div class="paragraph">
-<p>Merknad: Posisjonskvalitet er ikke konform med kvalitetsmodellen i ISO slik den er definert i ISO19157:2013, men er en videreføring av tidligere brukte kvalitetsegenskaper i SOSI.
-Plan har i likhet med FKB innført en variant av datatypen Posisjonskvalitet der egenskapen målemetode er byttet ut med datafangstmetode.</p>
+<p>Merknad: Posisjonskvalitet er ikke konform med kvalitetsmodellen i ISO slik den er definert i ISO19157:2013, men er en videreføring av tidligere brukte kvalitetsegenskaper i SOSI.</p>
+</div>
+<div class="paragraph">
+<p>Datatypen Posisjonskvalitet er supplert med egenskapen målemetode, som et alternativ til datafangstmetode.</p>
 </div>
 <h6 id="_egenskaper_4" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -1761,8 +1766,7 @@ Plan har i likhet med FKB innført en variant av datatypen Posisjonskvalitet der
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">metode for datafangst.
-Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">metode for datafangst av grunnrisskoordinater (x,y)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -1774,7 +1778,7 @@ Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodeSpace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/datafangstmetode" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/datafangstmetode</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/datafangstmetode" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/datafangstmetode</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1852,7 +1856,7 @@ Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y)</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OCL kode:</p></td>
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>inv:
-målemetode-&gt;notEmpty xor datafangsmetode-&gt;notEmpty</pre></div></td>
+målemetode-&gt;notEmpty() xor datafangstmetode-&gt;notEmpty()</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -1875,7 +1879,7 @@ målemetode-&gt;notEmpty xor datafangsmetode-&gt;notEmpty</pre></div></td>
 <h5 id="kpdatafangstmetode">5.1.1.5. «CodeList» Datafangstmetode</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> kodeliste som angir metode for datafangst.
-Datafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.</p>
+Datafangstmetoden beskriver hvordan objektene er posisjonert fra et datagrunnlag og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.</p>
 </div>
 <h6 id="_profilparametre_i_tagged_values_2" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -1890,7 +1894,7 @@ Datafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et da
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/datafangstmetode" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/datafangstmetode</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/datafangstmetode" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/datafangstmetode</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1955,21 +1959,21 @@ Datafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et da
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram ArealplanID.png"><img src="Diagrammer/Hoveddiagram%20ArealplanID.png" alt="Diagram som viser den sammensatte datatypen NasjonalArealplanId."></a>
+<a class="image" href="diagrammer\Hoveddiagram ArealplanID.png"><img src="diagrammer/Hoveddiagram%20ArealplanID.png" alt="Diagram som viser den sammensatte datatypen NasjonalArealplanId."></a>
 </div>
 <div class="title">Figur 7. Hoveddiagram ArealplanID</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering NasjonalArealplanId.png"><img src="Diagrammer/Realisering%20NasjonalArealplanId.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
+<a class="image" href="diagrammer\Realisering NasjonalArealplanId.png"><img src="diagrammer/Realisering%20NasjonalArealplanId.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
 </div>
 <div class="title">Figur 8. Realisering NasjonalArealplanId</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring NasjonalArealplanId.png"><img src="Diagrammer/Endring%20NasjonalArealplanId.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
+<a class="image" href="diagrammer\Endring NasjonalArealplanId.png"><img src="diagrammer/Endring%20NasjonalArealplanId.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
 </div>
 <div class="title">Figur 9. Endring NasjonalArealplanId</div>
 </div>
@@ -2206,28 +2210,28 @@ landkode-&gt;notEmpty() and landkode='NO'</pre></div></td>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram Arealplan.png"><img src="Diagrammer/Hoveddiagram%20Arealplan.png" alt="Diagram med navn  Hoveddiagram Arealplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Hoveddiagram Arealplan.png"><img src="diagrammer/Hoveddiagram%20Arealplan.png" alt="Diagram med navn  Hoveddiagram Arealplan  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 10. Hoveddiagram Arealplan</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram Arealplan Kodelister.png"><img src="Diagrammer/Hoveddiagram%20Arealplan%20Kodelister.png" alt="Diagram med navn  Hoveddiagram Arealplan Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Hoveddiagram Arealplan Kodelister.png"><img src="diagrammer/Hoveddiagram%20Arealplan%20Kodelister.png" alt="Diagram med navn  Hoveddiagram Arealplan Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 11. Hoveddiagram Arealplan Kodelister</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering Arealplan.png"><img src="Diagrammer/Realisering%20Arealplan.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
+<a class="image" href="diagrammer\Realisering Arealplan.png"><img src="diagrammer/Realisering%20Arealplan.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
 </div>
 <div class="title">Figur 12. Realisering Arealplan</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring Arealplan.png"><img src="Diagrammer/Endring%20Arealplan.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
+<a class="image" href="diagrammer\Endring Arealplan.png"><img src="diagrammer/Endring%20Arealplan.png" alt="Diagram som viser hvordan denne spesifikasjonen realiserer klasser fra fagområdestandarden"></a>
 </div>
 <div class="title">Figur 13. Endring Arealplan</div>
 </div>
@@ -2317,7 +2321,7 @@ kommune (-del) plan (pbl. 1985 § 20-4 første ledd, eller pbl. 2008 § 11-5)</p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/plantype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/plantype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/plantype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/plantype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2346,7 +2350,7 @@ samt planens rettsvirkning (pbl. 1985 §§  20-6, 28-2 og 31 / pbl. §§ 8-3, 8-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/planstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/planstatus</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/planstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/planstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2375,7 +2379,7 @@ samt planens rettsvirkning (pbl. 1985 §§  20-6, 28-2 og 31 / pbl. §§ 8-3, 8-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/omplanbestemmelser" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/omplanbestemmelser</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/omplanbestemmelser" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/omplanbestemmelser</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2403,7 +2407,7 @@ samt planens rettsvirkning (pbl. 1985 §§  20-6, 28-2 og 31 / pbl. §§ 8-3, 8-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/lovreferansetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/lovreferansetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/lovreferansetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/lovreferansetype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2506,7 +2510,7 @@ samt planens rettsvirkning (pbl. 1985 §§  20-6, 28-2 og 31 / pbl. §§ 8-3, 8-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/forslagsstillerType" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/forslagsstillerType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/forslagsstillertype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/forslagsstillertype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3016,7 +3020,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <div class="sect4">
 <h5 id="kpforslagsstillertype">5.1.3.3. «CodeList» ForslagsstillerType</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> ekstern kodeliste som angir om forslagsstiller er privat eller offentlig</p>
+<p><strong>Definisjon:</strong> kodeliste som angir om forslagsstiller er privat eller offentlig</p>
 </div>
 <h6 id="_profilparametre_i_tagged_values_5" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -3031,7 +3035,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/forslagsstillerType" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/forslagsstillerType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/forslagsstillertype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/forslagsstillertype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3040,7 +3044,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <div class="sect4">
 <h5 id="kplovreferansetype">5.1.3.4. «CodeList» Lovreferansetype</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> ekstern kodeliste som angir kode for hvilken lov planen er vedtatt etter</p>
+<p><strong>Definisjon:</strong> kodeliste for å angi hvilken lov planen er vedtatt etter</p>
 </div>
 <h6 id="_profilparametre_i_tagged_values_6" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -3055,7 +3059,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/lovreferansetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/lovreferansetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/lovreferansetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/lovreferansetype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3077,7 +3081,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <div class="sect4">
 <h5 id="kpomplanbestemmelser">5.1.3.5. «CodeList» OmPlanbestemmelser</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> ekstern kodeliste som angir kode for om planen har bestemmelser og hvordan disse i så fall er representert</p>
+<p><strong>Definisjon:</strong> kodeliste for å angi om planen har bestemmelser og hvordan disse i så fall er representert</p>
 </div>
 <h6 id="_profilparametre_i_tagged_values_7" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -3092,7 +3096,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/omplanbestemmelser" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/omplanbestemmelser</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/omplanbestemmelser" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/omplanbestemmelser</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3114,7 +3118,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <div class="sect4">
 <h5 id="kpplanstatus">5.1.3.6. «CodeList» Planstatus</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> ekstern kodeliste som angir kode for planens behandling og rettsvirkning</p>
+<p><strong>Definisjon:</strong> kodeliste for å angi  planens behandling og rettsvirkning</p>
 </div>
 <h6 id="_profilparametre_i_tagged_values_8" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -3129,7 +3133,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/planstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/planstatus</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/planstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/planstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3151,7 +3155,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <div class="sect4">
 <h5 id="kpplantype">5.1.3.7. «CodeList» Plantype</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> kodeliste som angir type arealplan</p>
+<p><strong>Definisjon:</strong> kodeliste for å angi type arealplan</p>
 </div>
 <h6 id="_profilparametre_i_tagged_values_9" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
@@ -3166,7 +3170,7 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/plantype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/plantype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/planregister/plantype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/planregister/plantype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3189,33 +3193,33 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <div class="sect3">
 <h4 id="_pakke_planområde">5.1.4. Pakke: Planområde</h4>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> modellelementer  for kommune(-del) plan som er felles etter begge lover (pbl. 1985 § 20-4 første ledd, eller pbl. 2008 § 11-5)</p>
+<p><strong>Definisjon:</strong> modellpakke for planområde</p>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Oversiktsdiagram Planområde.png"><img src="Diagrammer/Oversiktsdiagram%20Planområde.png" alt="Diagram med navn  Oversiktsdiagram Planområde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Oversiktsdiagram Planområde.png"><img src="diagrammer/Oversiktsdiagram%20Planområde.png" alt="Diagram med navn  Oversiktsdiagram Planområde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 14. Oversiktsdiagram Planområde</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram KpOmråde.png"><img src="Diagrammer/Hoveddiagram%20KpOmråde.png" alt="Diagram med navn  Hoveddiagram KpOmråde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Hoveddiagram KpOmråde.png"><img src="diagrammer/Hoveddiagram%20KpOmråde.png" alt="Diagram med navn  Hoveddiagram KpOmråde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 15. Hoveddiagram KpOmråde</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering Planområde.png"><img src="Diagrammer/Realisering%20Planområde.png" alt="Diagram med navn  Realisering Planområde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Realisering Planområde.png"><img src="diagrammer/Realisering%20Planområde.png" alt="Diagram med navn  Realisering Planområde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 16. Realisering Planområde</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring Planområde.png"><img src="Diagrammer/Endring%20Planområde.png" alt="Diagram med navn  Endring Planområde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Endring Planområde.png"><img src="diagrammer/Endring%20Planområde.png" alt="Diagram med navn  Endring Planområde  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 17. Endring Planområde</div>
 </div>
@@ -3270,7 +3274,11 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpvertikalnivå">«Enumeration»Vertikalnivå</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpvertikalnivå">«CodeList» Vertikalnivå</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/vertikalnivå" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/vertikalnivå</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3312,7 +3320,9 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Subtyper:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkphensynrom">«FeatureType» KpHensynRom</a><br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkphandlingrom">«FeatureType» KpHandlingRom</a><br>
+<a href="#kpkphandlingområde">«FeatureType» KpHandlingOmråde</a><br>
+<a href="#kpkphensynrom">«FeatureType» KpHensynRom</a><br>
 <a href="#kpkpbestemmelserom">«FeatureType» KpBestemmelseRom</a><br>
 <a href="#kpkparealformålområde">«FeatureType» KpArealformålOmråde</a><br>
 <a href="#kpkphensynsone">«FeatureType» KpHensynSone</a><br>
@@ -3329,7 +3339,6 @@ plantype = 20 OR plantype = 21 OR plantype = 22</pre></div></td>
 <a href="#kpkpgrense">«FeatureType» KpGrense</a><br>
 <a href="#kpkpområde">«FeatureType» KpOmråde</a><br>
 <a href="#kpkpendringområde">«FeatureType» KpEndringOmråde</a><br>
-<a href="#kpplanområde">«FeatureType» Planområde</a><br>
 <a href="#kpkppåskrift">«FeatureType» KpPåskrift</a><br></p></td>
 </tr>
 <tr>
@@ -4198,6 +4207,30 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>nasjonalArealplanId</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpnasjonalarealplanid">«dataType» NasjonalArealplanId</a></p></td>
+</tr>
+</tbody>
+</table>
 <h6 id="_arv_og_realiseringer_18" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -4207,7 +4240,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Supertype:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Planområde::<a href="#kpkpobjekt">«FeatureType» KpObjekt</a><br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fellesegenskaper::<a href="#kpfellesegenskaperkart">«FeatureType» FellesegenskaperKart</a><br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
@@ -4430,47 +4463,24 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpvertikalnivå">5.1.4.7. «Enumeration»Vertikalnivå</h5>
+<h5 id="kpvertikalnivå">5.1.4.7. «CodeList» Vertikalnivå</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> kodeliste for planområdets beliggenhet i forhold til jordoverflaten (pbl. § 19-1 sjette ledd, § 20-1 andre og femte ledd og § 22 og § 28-2)</p>
 </div>
-<h6 id="_koder_2" class="discrete">Koder</h6>
+<h6 id="_profilparametre_i_tagged_values_10" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 30%;">
-<col style="width: 60%;">
-<col style="width: 10%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kodenavn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Definisjon:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Utvekslingsalias:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Under grunnen (tunnel)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Under bakken, f.eks. tunnel.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">På grunnen/vannoverflate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">På bakken eller på vannoverflata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Over grunnen (bru)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Over bakken, f.eks. bru.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">På bunnen (vann/sjø)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">På bunnen av sjø eller innsjø</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I vannsøylen</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I vannsøylen</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/vertikalnivå" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/vertikalnivå</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4498,21 +4508,21 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram KpArealFormål.png"><img src="Diagrammer/Hoveddiagram%20KpArealFormål.png" alt="Diagram med navn  Hoveddiagram KpArealFormål  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Hoveddiagram KpArealFormål.png"><img src="diagrammer/Hoveddiagram%20KpArealFormål.png" alt="Diagram med navn  Hoveddiagram KpArealFormål  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 18. Hoveddiagram KpArealFormål</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering KpArealFormål.png"><img src="Diagrammer/Realisering%20KpArealFormål.png" alt="Diagram med navn  Realisering KpArealFormål  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Realisering KpArealFormål.png"><img src="diagrammer/Realisering%20KpArealFormål.png" alt="Diagram med navn  Realisering KpArealFormål  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 19. Realisering KpArealFormål</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring KpArealFormål.png"><img src="Diagrammer/Endring%20KpArealFormål.png" alt="Diagram med navn  Endring KpArealFormål  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Endring KpArealFormål.png"><img src="diagrammer/Endring%20KpArealFormål.png" alt="Diagram med navn  Endring KpArealFormål  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 20. Endring KpArealFormål</div>
 </div>
@@ -4559,7 +4569,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arealformål - formålet må angis nærmere (pbl. § 11-7)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kode for nærmere angivelse av arealformål i kommuneplan  (pbl. § 11-7)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -4659,7 +4669,8 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">planbestemmelse om arealet skal eies av private eller det offentlige, eller være fellesarealer for flere eiendommer (pbl. § 11-10 nr. 3 og § 12-7 nr. 14)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kode for eierform.</p>
+<p class="tableblock">Eierform henviser til planbestemmelse om arealet skal brukes av det offentlige, eller være fellesarealer for flere eiendommer (pbl. § 11-10 nr. 3 og § 12-7 nr. 14)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -4668,6 +4679,10 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpeierformtype">«CodeList» Eierformtype</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/eierformtype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/eierformtype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4683,7 +4698,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk innen oversiktsplan (pbl. pbl. 1985 § 20-4 første ledd og § 25)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk i kommuneplan (pbl. §§ 11-7 og 12-1). Arealbruksstatus 3 skal ikke benyttes på planer etter pbl 2008.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -4692,6 +4707,10 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbrukstatus">«CodeList» Arealbrukstatus</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4756,6 +4775,42 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rollenavn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>handlingsområde</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">referanse til handlingsområde</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Assosiasjonstype:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Assosiasjon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Til klasse<em>:</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formål::<a href="#kpkphandlingområde">«FeatureType» KpHandlingOmråde</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sequenceNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inlineOrByReference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">byReference</p></td>
+</tr>
+</tbody>
+</table>
 <h6 id="_restriksjoner_6" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -4800,9 +4855,9 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <div class="sect4">
 <h5 id="kpkparealformål">5.1.5.2. «CodeList» KpArealformål</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
+<p><strong>Definisjon:</strong> kodeliste for nærmere angivelse av arealformål i kommuneplan  (pbl. § 11-7)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_10" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_11" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4837,9 +4892,9 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <div class="sect4">
 <h5 id="kparealbrukstatus">5.1.5.3. «CodeList» Arealbrukstatus</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
+<p><strong>Definisjon:</strong> kodeliste for status for arealbruk i oversiktsplan (pbl. 1985 § 20-4, første ledd og § 25) og kommuneplan (pbl. §§ 11-7 og 12-1). Arealbruksstatus 3 skal ikke benyttes på planer etter pbl 2008.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_11" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_12" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4874,9 +4929,12 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <div class="sect4">
 <h5 id="kpeierformtype">5.1.5.4. «CodeList» Eierformtype</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> kodeliste for nærmere angivelse av arealformål i reguleringsplan (pbl. § 12-5)</p>
+<p><strong>Definisjon:</strong> kodeliste for eierform.</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_12" class="discrete">Profilparametre i tagged values</h6>
+<div class="paragraph">
+<p>Eierform henviser til planbestemmelse om arealet skal brukes av det offentlige, eller være fellesarealer for flere eiendommer (pbl. § 11-10 nr. 3 og § 12-7 nr. 14)</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_13" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -4889,7 +4947,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi_kodelister/plan/arealplan/eierformtype" class="bare">https://register.geonorge.no/sosi_kodelister/plan/arealplan/eierformtype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/eierformtype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/eierformtype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4936,6 +4994,10 @@ Benyttes for å regulere bygningers volum over terreng og bygningers totale area
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kputnyttingstype">«CodeList» Utnyttingstype</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/utnyttingstype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/utnyttingstype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4996,12 +5058,11 @@ Benyttes for å regulere bygningers volum over terreng og bygningers totale area
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bruk av utnyttingstall</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Utnyttingstype for nyere planer</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/* utnyttingstall og utnyttingstall_minimum skal ikke brukes for utnyttingstype 10 og 11, men er påkrevd for alle andre utnyttingstyper  */</p>
-<p class="tableblock">INV: (utnyttingstype = 10 OR utnyttingstype = 11) XOR (utnyttingstall.notEmpty() OR utnyttingstall_minimum.notEmpty() )</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For planer etter gjeldende pbl er utnyttingstype begrensa til (10, 11, 15, 16, 17, 18)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
@@ -5017,15 +5078,22 @@ Benyttes for å regulere bygningers volum over terreng og bygningers totale area
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Utnyttingstype for nyere planer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bruk av utnyttingstall</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For planer etter gjeldende pbl er utnyttingstype begrensa til (10, 11, 15, 16, 17, 18)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/* utnyttingstall og utnyttingstall_minimum skal ikke brukes for utnyttingstype 10 og 11, men er påkrevd for alle andre utnyttingstyper  */</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invariant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OCL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OCL kode:</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>INV:
+(utnyttingstype = 10 OR utnyttingstype = 11)
+XOR
+(utnyttingstall.notEmpty() OR utnyttingstall_minimum.notEmpty() )</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -5049,7 +5117,7 @@ Benyttes for å regulere bygningers volum over terreng og bygningers totale area
 <div class="paragraph">
 <p><strong>Definisjon:</strong> kodeliste for nærmere angivelse av arealformål i reguleringsplan (pbl. § 12-5)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_13" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_14" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5062,7 +5130,7 @@ Benyttes for å regulere bygningers volum over terreng og bygningers totale area
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi_kodelister/plan/arealplan/utnyttingstype" class="bare">https://register.geonorge.no/sosi_kodelister/plan/arealplan/utnyttingstype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/utnyttingstype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/utnyttingstype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5128,58 +5196,126 @@ Benyttes for å regulere bygningers volum over terreng og bygningers totale area
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_pakke_hensyn">5.1.6. Pakke: Hensyn</h4>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> pakke som inneholder informasjonsmodellen for hensynsoner.</p>
-</div>
 <hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram KpHensynSone.png"><img src="Diagrammer/Hoveddiagram%20KpHensynSone.png" alt="Diagram med navn  Hoveddiagram KpHensynSone  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
-<div class="title">Figur 21. Hoveddiagram KpHensynSone</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Endring KpHensynSone.png"><img src="Diagrammer/Endring%20KpHensynSone.png" alt="Diagram med navn  Endring KpHensynSone  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 22. Endring KpHensynSone</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Endring KpHensynSone Kodelister.png"><img src="Diagrammer/Endring%20KpHensynSone%20Kodelister.png" alt="Diagram med navn  Endring KpHensynSone Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 23. Endring KpHensynSone Kodelister</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Realisering KpHensynSone.png"><img src="Diagrammer/Realisering%20KpHensynSone.png" alt="Diagram med navn  Realisering KpHensynSone  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 24. Realisering KpHensynSone</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Realisering KpHensynSone Kodelister.png"><img src="Diagrammer/Realisering%20KpHensynSone%20Kodelister.png" alt="Diagram med navn  Realisering KpHensynSone Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 25. Realisering KpHensynSone Kodelister</div>
-</div>
-<hr>
 <div class="sect4">
-<h5 id="kpkphensynrom">5.1.6.1. «FeatureType» KpHensynRom</h5>
+<h5 id="kpkphandlingområde">5.1.5.8. «FeatureType» KpHandlingOmråde</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> hensynsrom i 3D for KpHensynSone
-Hensynsrommet tilhører alltid en hensynssone, som er en av subtypene til den abstrakte supertypen KpHensynSone, dvs. en av disse: KpStøySone, KpSikringSone, KpFareSone, KpBåndleggingSone, KpAngittHensynSone, KpInfrastrukturSone eller
-KpGjennomføringSone.</p>
+<p><strong>Definisjon:</strong> område som konstruksjonen/tiltaket må holde seg innenfor (kart- og planforskriften vedlegg I bokstav c nr. 4 – formål og bestemmelser fastsatt med linjer i reguleringsplan).</p>
+</div>
+<div class="paragraph">
+<p>Merknad: KpHandlingOmråde har samme betydning som byggegrense og anvendes ved fremstilling av planen i 2D.
+Dersom det også er angitt et 3D-rom som avgrenser tiltaket vertikalt, er dette gitt ved et tilhørende KpHandlingRom. Det må da være samsvar mellom de to geometriene ved at flategeometrien er fotavtrykket (grunnrissprojeksjonen) av romgeometrien.</p>
 </div>
 <h6 id="_egenskaper_17" class="discrete">Egenskaper</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>område</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">områdets flategeometri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/GM_Surface">GM_Surface</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_roller_4" class="discrete">Roller</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rollenavn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rom</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">referanse til 3D-geometri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Assosiasjonstype:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Assosiasjon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Til klasse<em>:</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formål::<a href="#kpkphandlingrom">«FeatureType» KpHandlingRom</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sequenceNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inlineOrByReference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">byReference</p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_restriksjoner_8" class="discrete">Restriksjoner</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samsvar med formålområde</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8201;&#8212;&#8201;Området må ligge innenfor det formålsområde det tilhører</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invariant</p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_30" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supertype:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Planområde::<a href="#kpkpobjekt">«FeatureType» KpObjekt</a><br></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Reguleringsplan::Rp 2008::<span class="underline">«FeatureType» RpHandlingOmråde</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="kpkphandlingrom">5.1.5.9. «FeatureType» KpHandlingRom</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> handlingsrom i 3D for KpHandlingOmråde.
+Konstruksjonen/tiltaket må holde seg innenfor handlingrommet, i henhold til de tilhørende planbestemmelsene</p>
+</div>
+<h6 id="_egenskaper_18" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5204,7 +5340,121 @@ KpGjennomføringSone.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_8" class="discrete">Restriksjoner</h6>
+<h6 id="_restriksjoner_9" class="discrete">Restriksjoner</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Fotavtrykket må samsvare med flateobjektet</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8201;&#8212;&#8201;Fotavtrykket (grunnrissprojeksjonen) av 3D-geometrien må samsvare med 2D-geometrien for det området det tilhører.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invariant</p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_31" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supertype:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Planområde::<a href="#kpkpobjekt">«FeatureType» KpObjekt</a><br></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Reguleringsplan::Rp 2008::<span class="underline">«FeatureType» RpHandlingOmråde</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pakke_hensyn">5.1.6. Pakke: Hensyn</h4>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> pakke som inneholder informasjonsmodellen for hensynsoner.</p>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Hoveddiagram KpHensynSone.png"><img src="diagrammer/Hoveddiagram%20KpHensynSone.png" alt="Diagram med navn  Hoveddiagram KpHensynSone  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+</div>
+<div class="title">Figur 21. Hoveddiagram KpHensynSone</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Endring KpHensynSone.png"><img src="diagrammer/Endring%20KpHensynSone.png" alt="Diagram med navn  Endring KpHensynSone  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+</div>
+<div class="title">Figur 22. Endring KpHensynSone</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Endring KpHensynSone Kodelister.png"><img src="diagrammer/Endring%20KpHensynSone%20Kodelister.png" alt="Diagram med navn  Endring KpHensynSone Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+</div>
+<div class="title">Figur 23. Endring KpHensynSone Kodelister</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Realisering KpHensynSone.png"><img src="diagrammer/Realisering%20KpHensynSone.png" alt="Diagram med navn  Realisering KpHensynSone  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+</div>
+<div class="title">Figur 24. Realisering KpHensynSone</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Realisering KpHensynSone Kodelister.png"><img src="diagrammer/Realisering%20KpHensynSone%20Kodelister.png" alt="Diagram med navn  Realisering KpHensynSone Kodelister  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+</div>
+<div class="title">Figur 25. Realisering KpHensynSone Kodelister</div>
+</div>
+<hr>
+<div class="sect4">
+<h5 id="kpkphensynrom">5.1.6.1. «FeatureType» KpHensynRom</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> hensynsrom i 3D for KpHensynSone
+Hensynsrommet tilhører alltid en hensynssone, som er en av subtypene til den abstrakte supertypen KpHensynSone, dvs. en av disse: KpStøySone, KpSikringSone, KpFareSone, KpBåndleggingSone, KpAngittHensynSone, KpInfrastrukturSone eller
+KpGjennomføringSone.</p>
+</div>
+<h6 id="_egenskaper_19" class="discrete">Egenskaper</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rom</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lukket romgeometri i 3D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/GM_Solid">GM_Solid</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_restriksjoner_10" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5225,7 +5475,7 @@ KpGjennomføringSone.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_30" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_32" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5249,7 +5499,7 @@ KpGjennomføringSone.</p>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone i kommune(-del)plan (pbl §11-8 tredje ledd).</p>
 </div>
-<h6 id="_egenskaper_18" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_20" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5322,7 +5572,7 @@ KpGjennomføringSone.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="_roller_4" class="discrete">Roller</h6>
+<h6 id="_roller_5" class="discrete">Roller</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5359,7 +5609,7 @@ KpGjennomføringSone.</p>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_31" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_33" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5394,7 +5644,7 @@ KpGjennomføringSone.</p>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for sikring i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav a)</p>
 </div>
-<h6 id="_egenskaper_19" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_21" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5419,11 +5669,11 @@ KpGjennomføringSone.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/kpsikringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/kpsikringsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/sikringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/sikringsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_32" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_34" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5447,7 +5697,7 @@ KpGjennomføringSone.</p>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type sikring i hensynsone for sikring i kommuneplan (pbl. § 12-6, jf. § 11-8 tredje ledd bokstav a)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_14" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_15" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5460,11 +5710,11 @@ KpGjennomføringSone.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/kpsikringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/kpsikringsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/sikringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/sikringsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_33" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_35" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5484,7 +5734,7 @@ KpGjennomføringSone.</p>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for støy i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav a)</p>
 </div>
-<h6 id="_egenskaper_20" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_22" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5509,11 +5759,11 @@ KpGjennomføringSone.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/støysonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/støysonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/støysonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/støysonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_34" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_36" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5538,7 +5788,7 @@ KpGjennomføringSone.</p>
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type støy i hensynsone for støy (pbl. § 11-8, tredje ledd bokstav a).
 Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-04-1089" class="bare">https://lovdata.no/dokument/LTI/forskrift/2002-10-04-1089</a>, og veiledning til forskriften (T-1442): <a href="https://www.regjeringen.no/no/dokumenter/retningslinje-for-behandling-av-stoy-i-arealplanlegging/id2857574/" class="bare">https://www.regjeringen.no/no/dokumenter/retningslinje-for-behandling-av-stoy-i-arealplanlegging/id2857574/</a></p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_15" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_16" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5551,11 +5801,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/støysonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/støysonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/støysonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/støysonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_35" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_37" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5575,7 +5825,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for fare i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav a)</p>
 </div>
-<h6 id="_egenskaper_21" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_23" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5600,11 +5850,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/faresonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/faresonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/faresonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/faresonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_36" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_38" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5628,7 +5878,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type fare i hensynssone for fare (pbl. § 11-8, tredje ledd bokstav a)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_16" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_17" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5641,11 +5891,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/faresonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/faresonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/faresonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/faresonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_37" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_39" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5665,7 +5915,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for særlige krav til infrastruktur i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav b)</p>
 </div>
-<h6 id="_egenskaper_22" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_24" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5690,11 +5940,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/infrastruktursonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/infrastruktursonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/infrastruktursonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/infrastruktursonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_38" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_40" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5718,7 +5968,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type infrastrukturkrav i hensynsone for infrastruktur (pbl. § 11-8, tredje ledd bokstav b)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_17" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_18" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5731,11 +5981,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/infrastruktursonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/infrastruktursonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/infrastruktursonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/infrastruktursonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_39" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_41" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5755,7 +6005,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for nærmere angitte hensyn i kommune(-del)plan (pbl. § 11-8)</p>
 </div>
-<h6 id="_egenskaper_23" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_25" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5780,11 +6030,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/angitthensynsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/angitthensynsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/angitthensynsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/angitthensynsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_40" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_42" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5808,7 +6058,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type angitt hensyn i hensynssone for nærmere angitt hensyn  (11-8 tredje ledd bokstav c)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_18" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_19" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5821,11 +6071,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/angitthensynsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/angitthensynsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/angitthensynsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/angitthensynsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_41" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_43" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5845,7 +6095,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for båndlegging  i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav d)</p>
 </div>
-<h6 id="_egenskaper_24" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_26" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5870,7 +6120,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/båndleggingsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/båndleggingsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/båndleggingsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/båndleggingsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5922,7 +6172,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_42" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_44" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5946,7 +6196,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type båndlegging i hensynssone for båndlegging (pbl. § 11-8 tredje ledd bokstav d)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_19" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_20" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5959,11 +6209,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/båndleggingsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/båndleggingsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/båndleggingsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/båndleggingsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_43" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_45" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -5983,7 +6233,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for særskilte gjennomføringsvirkemidler i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav e)</p>
 </div>
-<h6 id="_egenskaper_25" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_27" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6008,11 +6258,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/gjennomføringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/gjennomføringsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/gjennomføringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/gjennomføringsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_44" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_46" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6036,7 +6286,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type særskilte gjennomføringsvirkemidler i gjennomføringssone (pbl. § 11-8 tredje ledd bokstav e andre ledd)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_20" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_21" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6049,11 +6299,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/gjennomføringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/gjennomføringsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/gjennomføringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/gjennomføringsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_45" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_47" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6073,7 +6323,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> hensynssone for videreføring av reguleringsplan i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav f)</p>
 </div>
-<h6 id="_egenskaper_26" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_28" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6098,11 +6348,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/detaljeringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/detaljeringsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/detaljeringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/detaljeringsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_46" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_48" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6126,7 +6376,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> uttømmende kodeliste for type detaljering i detaljeringssone - videreføring av gjeldende reguleringsplan (pbl. § 11-8 tredje ledd bokstav f)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_21" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_22" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6139,11 +6389,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/hensyn/detaljeringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/hensyn/detaljeringsonetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/detaljeringsonetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/detaljeringsonetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_47" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_49" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6167,23 +6417,22 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram KpBestemmelse.png"><img src="Diagrammer/Hoveddiagram%20KpBestemmelse.png" alt="Diagram med navn  Hoveddiagram KpBestemmelse  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Hoveddiagram KpBestemmelse.png"><img src="diagrammer/Hoveddiagram%20KpBestemmelse.png" alt="Diagram med navn  Hoveddiagram KpBestemmelse  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 26. Hoveddiagram KpBestemmelse</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering KpBestemmelse.png"><img src="Diagrammer/Realisering%20KpBestemmelse.png" alt="Diagram med navn  Realisering KpBestemmelse  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Realisering KpBestemmelse.png"><img src="diagrammer/Realisering%20KpBestemmelse.png" alt="Diagram med navn  Realisering KpBestemmelse  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
 <div class="title">Figur 27. Realisering KpBestemmelse</div>
 </div>
 <hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Endring KpBestemmelse.png"><img src="Diagrammer/Endring%20KpBestemmelse.png" alt="Diagram med navn  Endring KpBestemmelse  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 28. Endring KpBestemmelse</div>
+<div class="paragraph">
+<div class="title">Endring KpBestemmelse</div>
+<p>image::diagrammer\Endring KpBestemmelse.png[link=diagrammer\Endring KpBestemmelse.png, , alt="
+"]</p>
 </div>
 <hr>
 <div class="sect4">
@@ -6191,7 +6440,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> område med bestemmelser til kommune (-del) plan (pbl. §§ 11-9, 11-10 og 11-11)</p>
 </div>
-<h6 id="_egenskaper_27" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_29" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6252,7 +6501,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Pbl. §§ 11-9, 11-10 og 11-11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kode for hjemmel til planbestemmelse  i kommuneplan (Pbl. §§ 11-9, 11-10 og 11-11)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -6262,9 +6511,13 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkpbestemmelsehjemmel">«CodeList» KpBestemmelseHjemmel</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/kpbestemmelsehjemmel" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/kpbestemmelsehjemmel</a></p></td>
+</tr>
 </tbody>
 </table>
-<h6 id="_roller_5" class="discrete">Roller</h6>
+<h6 id="_roller_6" class="discrete">Roller</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6301,7 +6554,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_48" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_50" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6325,7 +6578,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> bestemmelserom i 3D for KpBestemmelseOmråde</p>
 </div>
-<h6 id="_egenskaper_28" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_30" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6350,7 +6603,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_9" class="discrete">Restriksjoner</h6>
+<h6 id="_restriksjoner_11" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6371,7 +6624,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_49" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_51" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6393,9 +6646,9 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="sect4">
 <h5 id="kpkpbestemmelsehjemmel">5.1.7.3. «CodeList» KpBestemmelseHjemmel</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> Pbl. §§ 11-9, 11-10 og 11-11</p>
+<p><strong>Definisjon:</strong> Kodeliste for hjemmel til planbestemmelse  i kommuneplan (Pbl. §§ 11-9, 11-10 og 11-11)</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_22" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_23" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6412,7 +6665,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_50" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_52" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6436,23 +6689,23 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram høyde fra planbestemmelse.png"><img src="Diagrammer/Hoveddiagram%20høyde%20fra%20planbestemmelse.png" alt="Diagram som viser høyde fra planbestemmelse"></a>
+<a class="image" href="diagrammer\Hoveddiagram høyde fra planbestemmelse.png"><img src="diagrammer/Hoveddiagram%20høyde%20fra%20planbestemmelse.png" alt="Diagram som viser høyde fra planbestemmelse"></a>
 </div>
-<div class="title">Figur 29. Hoveddiagram høyde fra planbestemmelse</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Endring høyde fra planbestemmelse.png"><img src="Diagrammer/Endring%20høyde%20fra%20planbestemmelse.png" alt="Diagram som viser realisering av høyde fra planbestemmelse"></a>
-</div>
-<div class="title">Figur 30. Endring høyde fra planbestemmelse</div>
+<div class="title">Figur 28. Hoveddiagram høyde fra planbestemmelse</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering høyde fra planbestemmelse.png"><img src="Diagrammer/Realisering%20høyde%20fra%20planbestemmelse.png" alt="Diagram som viser realisering av høyde fra planbestemmelse"></a>
+<a class="image" href="diagrammer\Endring høyde fra planbestemmelse.png"><img src="diagrammer/Endring%20høyde%20fra%20planbestemmelse.png" alt="Diagram som viser realisering av høyde fra planbestemmelse"></a>
 </div>
-<div class="title">Figur 31. Realisering høyde fra planbestemmelse</div>
+<div class="title">Figur 29. Endring høyde fra planbestemmelse</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Realisering høyde fra planbestemmelse.png"><img src="diagrammer/Realisering%20høyde%20fra%20planbestemmelse.png" alt="Diagram som viser realisering av høyde fra planbestemmelse"></a>
+</div>
+<div class="title">Figur 30. Realisering høyde fra planbestemmelse</div>
 </div>
 <hr>
 <div class="sect4">
@@ -6460,7 +6713,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> linje med bestemmelse om regulert høyde (bestemmelse om utforming illustrert på kart,  pbl. § 12-7 nr. 1)</p>
 </div>
-<h6 id="_egenskaper_29" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_31" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6509,7 +6762,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_51" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_53" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6533,7 +6786,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 <div class="paragraph">
 <p><strong>Definisjon:</strong> regulert høyde gitt i planbestemmelser (bestemmelse om utforming illustrert på kart, pbl. § 12-7 nr. 1)</p>
 </div>
-<h6 id="_egenskaper_30" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_32" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6578,7 +6831,11 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kptypehøyde">«Enumeration»TypeHøyde</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kptypehøyde">«CodeList» TypeHøyde</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/typehøyde" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/typehøyde</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6603,7 +6860,7 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kphøydereferansesystem ">«CodeList» Høydereferansesystem </a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kphøydereferansesystem">«CodeList» Høydereferansesystem</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6628,11 +6885,15 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpterrengreferanse">«Enumeration»Terrengreferanse</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpterrengreferanse">«CodeList» Terrengreferanse</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/terrengreferanse" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/terrengreferanse</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_10" class="discrete">Restriksjoner</h6>
+<h6 id="_restriksjoner_12" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6645,18 +6906,23 @@ Se støyforskriften: <a href="https://lovdata.no/dokument/LTI/forskrift/2002-10-
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8201;&#8212;&#8201;Terrengreferanse kan brukes i steden for høydereferansesystem dersom typeHøyde er gesims- eller mønehøyde.</p>
-<p class="tableblock">INV: ( høydereferansesystem- nonEmpty() AND terrengreferanse- isEmpty() )
-OR ( terrengreferanse- nonEmpty() AND  høydereferansesystem- isEmpty()
-AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8201;&#8212;&#8201;Terrengreferanse kan brukes i steden for høydereferansesystem dersom typeHøyde er gesims- eller mønehøyde.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invariant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OCL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OCL kode:</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Inv:
+( høydereferansesystem-&gt;notEmpty() XOR terrengreferanse-&gt;notEmpty()  )
+AND
+( terrengreferanse-&gt;notEmpty() IMPLIES
+(typehøyde-&gt;notEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')  )  )</pre></div></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_52" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_54" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6670,16 +6936,13 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tbody>
 </table>
 <hr>
-<div class="paragraph">
-<p>[[kphøydereferansesystem ]]</p>
-</div>
 </div>
 <div class="sect4">
-<h5 id="_codelist_høydereferansesystem">5.1.8.3. «CodeList» Høydereferansesystem</h5>
+<h5 id="kphøydereferansesystem">5.1.8.3. «CodeList» Høydereferansesystem</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> referanseflate som er utgangspunktet for høyde</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_23" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_24" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6696,7 +6959,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_53" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_55" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6712,11 +6975,28 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kptypehøyde">5.1.8.4. «Enumeration»TypeHøyde</h5>
+<h5 id="kptypehøyde">5.1.8.4. «CodeList» TypeHøyde</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> koder som angir hva slags høyde som er regulert</p>
 </div>
-<h6 id="_koder_3" class="discrete">Koder</h6>
+<h6 id="_profilparametre_i_tagged_values_25" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/typehøyde" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/typehøyde</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_koder_2" class="discrete">Koder</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6751,7 +7031,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_54" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_56" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6767,11 +7047,28 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpterrengreferanse">5.1.8.5. «Enumeration»Terrengreferanse</h5>
+<h5 id="kpterrengreferanse">5.1.8.5. «CodeList» Terrengreferanse</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> kodeliste som angir type terrengoverflate som er utgangspunkt for å angi bygningers høyde</p>
+<p><strong>Definisjon:</strong> kodeliste som angir hva slags terrengoverflate som er utgangspunkt for å angi bygningers høyde</p>
 </div>
-<h6 id="_koder_4" class="discrete">Koder</h6>
+<h6 id="_profilparametre_i_tagged_values_26" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/terrengreferanse" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/terrengreferanse</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_koder_3" class="discrete">Koder</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6796,7 +7093,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_55" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_57" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6820,38 +7117,38 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram Kp Linjer og Punkt.png"><img src="Diagrammer/Hoveddiagram%20Kp%20Linjer%20og%20Punkt.png" alt="diagrammet viser alle klassene i pakka"></a>
+<a class="image" href="diagrammer\Hoveddiagram Linjer og Punkt.png"><img src="diagrammer/Hoveddiagram%20Linjer%20og%20Punkt.png" alt="diagrammet viser alle klassene i pakka"></a>
 </div>
-<div class="title">Figur 32. Hoveddiagram Kp Linjer og Punkt</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Realisering Linjer 2008.png"><img src="Diagrammer/Realisering%20Linjer%202008.png" alt="Diagram med navn  Realisering Linjer 2008  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 33. Realisering Linjer 2008</div>
+<div class="title">Figur 31. Hoveddiagram Linjer og Punkt</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering Samferdsel.png"><img src="Diagrammer/Realisering%20Samferdsel.png" alt="diagrammet viser alle klassene i pakka"></a>
+<a class="image" href="diagrammer\Realisering Linjer.png"><img src="diagrammer/Realisering%20Linjer.png" alt="Diagram med navn  Realisering Linjer  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
-<div class="title">Figur 34. Realisering Samferdsel</div>
+<div class="title">Figur 32. Realisering Linjer</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring Kp Linjer og punkt.png"><img src="Diagrammer/Endring%20Kp%20Linjer%20og%20punkt.png" alt="diagrammet viser alle klassene i pakka"></a>
+<a class="image" href="diagrammer\Realisering Samferdsel.png"><img src="diagrammer/Realisering%20Samferdsel.png" alt="diagrammet viser alle klassene i pakka"></a>
 </div>
-<div class="title">Figur 35. Endring Kp Linjer og punkt</div>
+<div class="title">Figur 33. Realisering Samferdsel</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Endring Linjer og punkt.png"><img src="diagrammer/Endring%20Linjer%20og%20punkt.png" alt="diagrammet viser alle klassene i pakka"></a>
+</div>
+<div class="title">Figur 34. Endring Linjer og punkt</div>
 </div>
 <hr>
 <div class="sect4">
 <h5 id="kpkpsamferdselpunkt">5.1.9.1. «FeatureType» KpSamferdselPunkt</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> punkt som viser viktige ledd i kommunikasjonssystemet i kommune (-del) plan (pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p>
+<p><strong>Definisjon:</strong> punkt som viser viktig ledd i kommunikasjonssystemet i kommuneplan eller -delplan (pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p>
 </div>
-<h6 id="_egenskaper_31" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_33" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6888,7 +7185,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">punkt i viktig ledd i kommunikasjonssystemet i kommuneplanens arealdel, jf. pbl. § 11-7 andre ledd nr. 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type samferdselpunkt i kommuneplan eller -delplan (pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -6898,29 +7195,9 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpsamferdselspunkttype">«CodeList» SamferdselspunktType</a></p></td>
 </tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vertikalnivå</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">planens eller innholdets beliggenhet i forhold til jordoverflaten (pbl. 1985 § 19-1 sjette ledd, § 20-1 andre og femte ledd og § 22 og § 28-2)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpvertikalnivå">«Enumeration»Vertikalnivå</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselspunkttype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselspunkttype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6936,7 +7213,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk innen oversiktsplan (pbl. 1985 § 20-4, første ledd og § 25)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk i oversiktsplan (pbl. 1985 § 20-4, første ledd og § 25) og kommuneplan (pbl. §§ 11-7 og 12-1). Arealbruksstatus 3 skal ikke benyttes på planer etter pbl 2008.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -6945,6 +7222,10 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbrukstatus">«CodeList» Arealbrukstatus</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6960,7 +7241,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grad av viktighet for punkter i kommunikasjonssystemet i oversiktsplan (pbl. 1985 § 20-4, første ledd nr. 6)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grad av viktighet for punkt i kommunikasjonssystemet i  kommuneplan eller-delplan (pbl. 1985 § 20-4, første ledd nr. 6)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -6970,9 +7251,37 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpviktighet">«CodeList» Viktighet</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/viktighet" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/viktighet</a></p></td>
+</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_56" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>objektnavn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navn til planobjekt som har punkt- eller linjegeometri. Objektnavnet identifiserer planobjektet unikt innen samme plan.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_58" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -6992,11 +7301,48 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpkpsamferdsellinje">5.1.9.2. «FeatureType» KpSamferdselLinje</h5>
+<h5 id="kpsamferdselspunkttype">5.1.9.2. «CodeList» SamferdselspunktType</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> type samferdselpunkt i  kommuneplan eller -delplan,(pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_27" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselspunkttype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselspunkttype</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_59" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp felles::<span class="underline">«Enumeration»SamferdselspunktType</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="kpkpsamferdsellinje">5.1.9.3. «FeatureType» KpSamferdselLinje</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> linjer som viser viktige ledd i kommunikasjonssystemet i kommune (-del) plan (pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p>
 </div>
-<h6 id="_egenskaper_32" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_34" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7033,7 +7379,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">type linje i viktig ledd i kommunikasjonssystemet i kommuneplanens arealdel, jf. pbl. § 11-7 andre ledd nr. 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type samferdselslinje i kommuneplanens arealdel (pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -7043,29 +7389,9 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpsamferdselslinjetype">«CodeList» SamferdselslinjeType</a></p></td>
 </tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vertikalnivå</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">planens eller innholdets beliggenhet i forhold til jordoverflaten (pbl. 1985 § 19-1 sjette ledd, § 20-1, andre og femte ledd og § 22 og § 28-2)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpvertikalnivå">«Enumeration»Vertikalnivå</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselslinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselslinjetype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7081,7 +7407,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk innen oversiktsplan (pbl. 1985 § 20-4 første ledd og § 25)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk i oversiktsplan (pbl. 1985 § 20-4, første ledd og § 25) og kommuneplan (pbl. §§ 11-7 og 12-1). Arealbruksstatus 3 skal ikke benyttes på planer etter pbl 2008.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -7091,29 +7417,9 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbrukstatus">«CodeList» Arealbrukstatus</a></p></td>
 </tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>viktighet</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grad av viktighet for linjer i kommunikasjonssystemet i kommune(del)plan (pbl. 1985 § 20-4, første ledd nr. 6)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpviktighet">«CodeList» Viktighet</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7129,7 +7435,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">planbestemmelse om lokalisering, bruk og strenghetsklasser for avkjørsler til veg (pbl. § 11-10 nr. 4)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">strenghetsklasse for avkjørsler til veg (pbl. § 11-10 nr. 4)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -7139,9 +7445,90 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpholdningsklassetype">«CodeList» HoldningsklasseType</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/holdningsklasse" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/holdningsklasse</a></p></td>
+</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_57" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>viktighet</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grad av viktighet for linjer i kommunikasjonssystemet i  kommuneplan eller-delplan (pbl. 1985 § 20-4, første ledd nr. 6)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpviktighet">«CodeList» Viktighet</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/viktighet" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/viktighet</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>objektnavn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navn til planobjekt som har punkt- eller linjegeometri. Objektnavnet identifiserer planobjektet unikt innen samme plan.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_restriksjoner_13" class="discrete">Restriksjoner</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Vertikalnivå er påkrevd</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse:</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OCL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OCL kode:</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>inv: vertikalnivå-&gt;notEmpty()</pre></div></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_60" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7161,11 +7548,48 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpkpinfrastrukturlinje">5.1.9.3. «FeatureType» KpInfrastrukturLinje</h5>
+<h5 id="kpsamferdselslinjetype">5.1.9.4. «CodeList» SamferdselslinjeType</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> type samferdselslinje i kommuneplanens arealdel (pbl. 1985 § 20-4 første ledd nr. 6, eller pbl. § 11-7 andre ledd nr. 2)</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_28" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselslinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselslinjetype</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_61" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp felles::<span class="underline">«Enumeration»SamferdselslinjeType</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="kpkpinfrastrukturlinje">5.1.9.5. «FeatureType» KpInfrastrukturLinje</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> linje med særlige krav til infrastruktur i kommune(-del)plan (pbl. § 11-8 tredje ledd bokstav b)</p>
 </div>
-<h6 id="_egenskaper_33" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_35" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7210,31 +7634,11 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkpinfrastrukturlinje">«FeatureType» KpInfrastrukturLinje</a></p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vertikalnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpinfrastrukturlinjetype">«CodeList» InfrastrukturLinjeType</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SOSI Ag9 22.mars 2011: Vertikalnivå skal være med på denne objekttypen</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpvertikalnivå">«Enumeration»Vertikalnivå</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/infrastrukturlinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/infrastrukturlinjetype</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7260,9 +7664,37 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbrukstatus">«CodeList» Arealbrukstatus</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus</a></p></td>
+</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_58" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>objektnavn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navn til planobjekt som har punkt- eller linjegeometri. Objektnavnet identifiserer planobjektet unikt innen samme plan.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_62" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7282,11 +7714,48 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpkpjuridisklinje">5.1.9.4. «FeatureType» KpJuridiskLinje</h5>
+<h5 id="kpinfrastrukturlinjetype">5.1.9.6. «CodeList» InfrastrukturLinjeType</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> type infrastruktur for infrastruktlinje (pbl. § 11-8 tredje ledd bokstav b)</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_29" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/infrastrukturlinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/infrastrukturlinjetype</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_63" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 2008::<span class="underline">«Enumeration»InfrastrukturLinjeType</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="kpkpjuridisklinje">5.1.9.7. «FeatureType» KpJuridiskLinje</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> linje for juridisk tilleggsinformasjon (pbl. kap. 11)</p>
 </div>
-<h6 id="_egenskaper_34" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_36" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7331,11 +7800,39 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkpjuridisklinje">«FeatureType» KpJuridiskLinje</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kpkpjuridisklinjetype">«CodeList» KpJuridiskLinjeType</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/kpjuridisklinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/kpjuridisklinjetype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_59" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn:</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>objektnavn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navn til planobjekt som har punkt- eller linjegeometri. Objektnavnet identifiserer planobjektet unikt innen samme plan.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://skjema.geonorge.no/SOSI/basistype/CharacterString">CharacterString</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_64" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7355,41 +7852,14 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpinfrastrukturlinjetype">5.1.9.5. «CodeList» InfrastrukturLinjeType</h5>
+<h5 id="kpkpjuridisklinjetype">5.1.9.8. «CodeList» KpJuridiskLinjeType</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
 </div>
 <div class="paragraph">
 <p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
 </div>
-<h6 id="_profilparametre_i_tagged_values_24" class="discrete">Profilparametre i tagged values</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/infrastrukturlinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/infrastrukturlinjetype</a></p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</div>
-<div class="sect4">
-<h5 id="kpkpjuridisklinjetype">5.1.9.6. «CodeList» KpJuridiskLinjeType</h5>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
-</div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_25" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_30" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7406,17 +7876,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 </tbody>
 </table>
-<hr>
-</div>
-<div class="sect4">
-<h5 id="kpsamferdselspunkttype">5.1.9.7. «CodeList» SamferdselspunktType</h5>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
-</div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_26" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_arv_og_realiseringer_65" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7424,39 +7884,8 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselspunkttype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselspunkttype</a></p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</div>
-<div class="sect4">
-<h5 id="kpsamferdselslinjetype">5.1.9.8. «CodeList» SamferdselslinjeType</h5>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
-</div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_27" class="discrete">Profilparametre i tagged values</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselslinjetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/samferdselslinjetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 2008::<span class="underline">«Enumeration»KpJuridiskLinjeType</span><br></p></td>
 </tr>
 </tbody>
 </table>
@@ -7465,12 +7894,9 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <div class="sect4">
 <h5 id="kpviktighet">5.1.9.9. «CodeList» Viktighet</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
+<p><strong>Definisjon:</strong> grad av viktighet for punkter/linjer i kommunikasjonssystemet i kommuneplan eller-delplan (pbl. 1985 § 20-4, første ledd nr. 6)</p>
 </div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_28" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_31" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7487,17 +7913,27 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 </tbody>
 </table>
+<h6 id="_arv_og_realiseringer_66" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp felles::<span class="underline">«Enumeration»Viktighet</span><br></p></td>
+</tr>
+</tbody>
+</table>
 <hr>
 </div>
 <div class="sect4">
 <h5 id="kpholdningsklassetype">5.1.9.10. «CodeList» HoldningsklasseType</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
+<p><strong>Definisjon:</strong> strenghetsklasser for avkjørsler til veg (pbl. § 11-10 nr. 4)</p>
 </div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_29" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_32" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7510,7 +7946,20 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/holdningsklassetype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/holdningsklassetype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/holdningsklasse" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/holdningsklasse</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_67" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp felles::<span class="underline">«Enumeration»HoldningsklasseType</span><br></p></td>
 </tr>
 </tbody>
 </table>
@@ -7525,23 +7974,23 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram KpPåskrift.png"><img src="Diagrammer/Hoveddiagram%20KpPåskrift.png" alt="Diagram som viser objekttypen Påskrift"></a>
+<a class="image" href="diagrammer\Hoveddiagram KpPåskrift.png"><img src="diagrammer/Hoveddiagram%20KpPåskrift.png" alt="Diagram som viser objekttypen Påskrift"></a>
 </div>
-<div class="title">Figur 36. Hoveddiagram KpPåskrift</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Realiseringsdiagram KpPåskrift.png"><img src="Diagrammer/Realiseringsdiagram%20KpPåskrift.png" alt="Diagram som viser objekttypen Påskrift"></a>
-</div>
-<div class="title">Figur 37. Realiseringsdiagram KpPåskrift</div>
+<div class="title">Figur 35. Hoveddiagram KpPåskrift</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endringsdiagram KpPåskrift.png"><img src="Diagrammer/Endringsdiagram%20KpPåskrift.png" alt="Diagram som viser objekttypen Påskrift"></a>
+<a class="image" href="diagrammer\Realiseringsdiagram KpPåskrift.png"><img src="diagrammer/Realiseringsdiagram%20KpPåskrift.png" alt="Diagram som viser objekttypen Påskrift"></a>
 </div>
-<div class="title">Figur 38. Endringsdiagram KpPåskrift</div>
+<div class="title">Figur 36. Realiseringsdiagram KpPåskrift</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Endringsdiagram KpPåskrift.png"><img src="diagrammer/Endringsdiagram%20KpPåskrift.png" alt="Diagram som viser objekttypen Påskrift"></a>
+</div>
+<div class="title">Figur 37. Endringsdiagram KpPåskrift</div>
 </div>
 <hr>
 <div class="sect4">
@@ -7549,7 +7998,7 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <div class="paragraph">
 <p><strong>Definisjon:</strong> påskrift eller supplerende tekst til plankartet for kommune (-del) plan (pbl. 1985 § 20-4 første ledd, eller pbl. § 11-7 andre ledd)</p>
 </div>
-<h6 id="_egenskaper_35" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_37" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -7621,6 +8070,10 @@ AND typehøyde- nonEmpty() AND (typeHøyde = 'TH' OR typeHøyde = 'PH')   )</p><
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kppåskrifttype">«CodeList» PåskriftType</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/påskrifttype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/påskrifttype</a></p></td>
+</tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
@@ -7675,7 +8128,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_roller_6" class="discrete">Roller</h6>
+<h6 id="_roller_7" class="discrete">Roller</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8460,7 +8913,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_60" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_68" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8484,7 +8937,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> egenskapsett for å formattere tekst på plankartet.  En videreføring av utvalgte egenskaper fra SOSI-formatets geometritype .TEKST</p>
 </div>
-<h6 id="_egenskaper_36" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_38" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8557,7 +9010,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_61" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_69" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8575,12 +9028,9 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 <div class="sect4">
 <h5 id="kppåskrifttype">5.1.10.3. «CodeList» PåskriftType</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> nærmere angivele av arealformål i kommuneplan  (pbl. § 11-7)</p>
+<p><strong>Definisjon:</strong></p>
 </div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_30" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_33" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8593,11 +9043,11 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/arealplan/påskrifttype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/arealplan/påskrifttype</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/plan-felles/påskrifttype" class="bare">https://register.geonorge.no/sosi-kodelister/plan/plan-felles/påskrifttype</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_62" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_70" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8621,30 +9071,30 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Oversiktsdiagram Kp1985.png"><img src="Diagrammer/Oversiktsdiagram%20Kp1985.png" alt="Diagram med navn  Oversiktsdiagram Kp1985  som viser UML-klasser beskrevet i teksten nedenfor."></a>
+<a class="image" href="diagrammer\Oversiktsdiagram Kp1985.png"><img src="diagrammer/Oversiktsdiagram%20Kp1985.png" alt="Diagram med navn  Oversiktsdiagram Kp1985  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
-<div class="title">Figur 39. Oversiktsdiagram Kp1985</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="Diagrammer\Hoveddiagram Kp1985.png"><img src="Diagrammer/Hoveddiagram%20Kp1985.png" alt="Diagram med navn  Hoveddiagram Kp1985  som viser UML-klasser beskrevet i teksten nedenfor."></a>
-</div>
-<div class="title">Figur 40. Hoveddiagram Kp1985</div>
+<div class="title">Figur 38. Oversiktsdiagram Kp1985</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Realisering Kp1985.png"><img src="Diagrammer/Realisering%20Kp1985.png" alt="Diagram som viser alle klassene i pakka."></a>
+<a class="image" href="diagrammer\Hoveddiagram Kp1985.png"><img src="diagrammer/Hoveddiagram%20Kp1985.png" alt="Diagram med navn  Hoveddiagram Kp1985  som viser UML-klasser beskrevet i teksten nedenfor."></a>
 </div>
-<div class="title">Figur 41. Realisering Kp1985</div>
+<div class="title">Figur 39. Hoveddiagram Kp1985</div>
 </div>
 <hr>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="Diagrammer\Endring Kp1985.png"><img src="Diagrammer/Endring%20Kp1985.png" alt="Diagram som viser alle klassene i pakka."></a>
+<a class="image" href="diagrammer\Realisering Kp1985.png"><img src="diagrammer/Realisering%20Kp1985.png" alt="Diagram som viser alle klassene i pakka."></a>
 </div>
-<div class="title">Figur 42. Endring Kp1985</div>
+<div class="title">Figur 40. Realisering Kp1985</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="diagrammer\Endring Kp1985.png"><img src="diagrammer/Endring%20Kp1985.png" alt="Diagram som viser alle klassene i pakka."></a>
+</div>
+<div class="title">Figur 41. Endring Kp1985</div>
 </div>
 <hr>
 <div class="sect4">
@@ -8652,7 +9102,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> område for arealbruk i kommune (-del) plan (pbl. 1985 § 20-4 første ledd)</p>
 </div>
-<h6 id="_egenskaper_37" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_39" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8689,7 +9139,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arealbrukskategori (pbl. 1985 § 20-4 første ledd)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kode for arealbrukskategori (pbl. 1985 § 20-4 første ledd)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -8701,7 +9151,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruk" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruk</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruk" class="bare">https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruk</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -8750,6 +9200,10 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbrukstatus">«CodeList» Arealbrukstatus</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -8825,7 +9279,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_roller_7" class="discrete">Roller</h6>
+<h6 id="_roller_8" class="discrete">Roller</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8854,7 +9308,7 @@ Når tekstplassering er utelatt, brukes objektposisjonen.</p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_11" class="discrete">Restriksjoner</h6>
+<h6 id="_restriksjoner_14" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8876,7 +9330,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_63" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_71" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8898,12 +9352,9 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <div class="sect4">
 <h5 id="kparealbruk">5.1.11.2. «CodeList» Arealbruk</h5>
 <div class="paragraph">
-<p><strong>Definisjon:</strong> arealbrukskategori (pbl. 1985 § 20-4 første ledd)</p>
+<p><strong>Definisjon:</strong> kodeliste for arealbrukskategori (pbl. 1985 § 20-4 første ledd)</p>
 </div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_31" class="discrete">Profilparametre i tagged values</h6>
+<h6 id="_profilparametre_i_tagged_values_34" class="discrete">Profilparametre i tagged values</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8916,11 +9367,11 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruk" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruk</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruk" class="bare">https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruk</a></p></td>
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_64" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_72" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -8936,91 +9387,11 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kparealbruksrestriksjoner">5.1.11.3. «CodeList» Arealbruksrestriksjoner</h5>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> arealbrukskategori (pbl. 1985 § 20-4 første ledd)</p>
-</div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_32" class="discrete">Profilparametre i tagged values</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruksrestriksjoner" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruksrestriksjoner</a></p></td>
-</tr>
-</tbody>
-</table>
-<h6 id="_arv_og_realiseringer_65" class="discrete">Arv og realiseringer</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 1985::<span class="underline">«Enumeration»Arealbruksrestriksjoner</span><br></p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</div>
-<div class="sect4">
-<h5 id="kparealbruksretningslinjer">5.1.11.4. «CodeList» Arealbruksretningslinjer</h5>
-<div class="paragraph">
-<p><strong>Definisjon:</strong> arealbrukskategori (pbl. 1985 § 20-4 første ledd)</p>
-</div>
-<div class="paragraph">
-<p>Kodelista forvaltes som ekstern kodeliste utenom fagområdestandarden</p>
-</div>
-<h6 id="_profilparametre_i_tagged_values_33" class="discrete">Profilparametre i tagged values</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruksretningslinjer" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbruksretningslinjer</a></p></td>
-</tr>
-</tbody>
-</table>
-<h6 id="_arv_og_realiseringer_66" class="discrete">Arv og realiseringer</h6>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 1985::<span class="underline">«Enumeration»Arealbruksretningslinjer</span><br></p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</div>
-<div class="sect4">
-<h5 id="kpkprestriksjonområde">5.1.11.5. «FeatureType» KpRestriksjonOmråde</h5>
+<h5 id="kpkprestriksjonområde">5.1.11.3. «FeatureType» KpRestriksjonOmråde</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> område med restriksjon i kommune (-del) plan (pbl. 1985 § 20-4)</p>
 </div>
-<h6 id="_egenskaper_38" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_40" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9057,7 +9428,8 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arealbruksstatus trengs for arealbruksrestriksjon 400, 410, 411, 420 og 499</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status for arealbruk i oversiktsplan (pbl. 1985 § 20-4, første ledd og § 25).
+Egenskapen arealbruksstatus trengs for arealbruksrestriksjon 400, 410, 411, 420 og 499</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -9066,6 +9438,10 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbrukstatus">«CodeList» Arealbrukstatus</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus" class="bare">https://register.geonorge.no/sosi-kodelister/plan/kommuneplan/arealbrukstatus</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -9081,7 +9457,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">type utfyllende bestemmelser (pbl. 1985 §§ 20-4 andre ledd bokstav a til h og 20-6 tredje ledd)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type restriksjon med utfyllende bestemmelser (pbl. §§ 20-4 andre ledd bokstav a til h og 20-6 tredje ledd)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet:</p></td>
@@ -9091,9 +9467,13 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbruksrestriksjoner">«CodeList» Arealbruksrestriksjoner</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksrestriksjoner" class="bare">https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksrestriksjoner</a></p></td>
+</tr>
 </tbody>
 </table>
-<h6 id="_restriksjoner_12" class="discrete">Restriksjoner</h6>
+<h6 id="_restriksjoner_15" class="discrete">Restriksjoner</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9114,7 +9494,7 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 </tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_67" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_73" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9134,11 +9514,48 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <hr>
 </div>
 <div class="sect4">
-<h5 id="kpkpretningslinjeområde">5.1.11.6. «FeatureType» KpRetningslinjeOmråde</h5>
+<h5 id="kparealbruksrestriksjoner">5.1.11.4. «CodeList» Arealbruksrestriksjoner</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> kodeliste for type restriksjon med utfyllende bestemmelser (pbl. §§ 20-4 andre ledd bokstav a til h og 20-6 tredje ledd)</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_35" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksrestriksjoner" class="bare">https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksrestriksjoner</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_74" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 1985::<span class="underline">«Enumeration»Arealbruksrestriksjoner</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="kpkpretningslinjeområde">5.1.11.5. «FeatureType» KpRetningslinjeOmråde</h5>
 <div class="paragraph">
 <p><strong>Definisjon:</strong> område med retningslinje i kommune (-del) plan (pbl. 1985 § 20-4)</p>
 </div>
-<h6 id="_egenskaper_39" class="discrete">Egenskaper</h6>
+<h6 id="_egenskaper_41" class="discrete">Egenskaper</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9185,9 +9602,13 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <td class="tableblock halign-left valign-top"><p class="tableblock">Type:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#kparealbruksretningslinjer">«CodeList» Arealbruksretningslinjer</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">defaultCodespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksretninglinjer" class="bare">https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksretninglinjer</a></p></td>
+</tr>
 </tbody>
 </table>
-<h6 id="_arv_og_realiseringer_68" class="discrete">Arv og realiseringer</h6>
+<h6 id="_arv_og_realiseringer_75" class="discrete">Arv og realiseringer</h6>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9201,6 +9622,43 @@ Videre kan det i produktspesifikasjonene settes krav om at avgrensningsobjektene
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 1985::<span class="underline">«FeatureType» KpRetningslinjeOmråde</span><br></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="kparealbruksretningslinjer">5.1.11.6. «CodeList» Arealbruksretningslinjer</h5>
+<div class="paragraph">
+<p><strong>Definisjon:</strong> kodeliste for type retningslinjer knyttet til arealbruksområder i oversiktsplan (pbl. 1985 § 19-1 sjette ledd og § 20-4 første ledd)</p>
+</div>
+<h6 id="_profilparametre_i_tagged_values_36" class="discrete">Profilparametre i tagged values</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asDictionary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">codeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksretninglinjer" class="bare">https://register.geonorge.no/sosi-kodelister/plan/pbl-1985/arealbruksretninglinjer</a></p></td>
+</tr>
+</tbody>
+</table>
+<h6 id="_arv_og_realiseringer_76" class="discrete">Arv og realiseringer</h6>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realisert fra:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plan-5.0::Kommuneplan::Kp 1985::<span class="underline">«Enumeration»Arealbruksretningslinjer</span><br></p></td>
 </tr>
 </tbody>
 </table>
